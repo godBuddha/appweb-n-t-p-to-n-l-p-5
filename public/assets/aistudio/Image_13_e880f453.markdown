@@ -1,0 +1,200 @@
+---
+name: Math Spark Junior
+colors:
+  surface: '#f8f9ff'
+  surface-dim: '#ccdbf3'
+  surface-bright: '#f8f9ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#eff4ff'
+  surface-container: '#e6eeff'
+  surface-container-high: '#dce9ff'
+  surface-container-highest: '#d5e3fc'
+  on-surface: '#0d1c2e'
+  on-surface-variant: '#434655'
+  inverse-surface: '#233144'
+  inverse-on-surface: '#eaf1ff'
+  outline: '#737686'
+  outline-variant: '#c3c6d7'
+  surface-tint: '#0053db'
+  primary: '#004ac6'
+  on-primary: '#ffffff'
+  primary-container: '#2563eb'
+  on-primary-container: '#eeefff'
+  inverse-primary: '#b4c5ff'
+  secondary: '#855300'
+  on-secondary: '#ffffff'
+  secondary-container: '#fea619'
+  on-secondary-container: '#684000'
+  tertiary: '#006242'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#007d55'
+  on-tertiary-container: '#bdffdb'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#dbe1ff'
+  primary-fixed-dim: '#b4c5ff'
+  on-primary-fixed: '#00174b'
+  on-primary-fixed-variant: '#003ea8'
+  secondary-fixed: '#ffddb8'
+  secondary-fixed-dim: '#ffb95f'
+  on-secondary-fixed: '#2a1700'
+  on-secondary-fixed-variant: '#653e00'
+  tertiary-fixed: '#6ffbbe'
+  tertiary-fixed-dim: '#4edea3'
+  on-tertiary-fixed: '#002113'
+  on-tertiary-fixed-variant: '#005236'
+  background: '#f8f9ff'
+  on-background: '#0d1c2e'
+  surface-variant: '#d5e3fc'
+typography:
+  display-lg:
+    fontFamily: Nunito Sans
+    fontSize: 36px
+    fontWeight: '800'
+    lineHeight: 44px
+  display-lg-mobile:
+    fontFamily: Nunito Sans
+    fontSize: 28px
+    fontWeight: '800'
+    lineHeight: 36px
+  headline-lg:
+    fontFamily: Nunito Sans
+    fontSize: 24px
+    fontWeight: '700'
+    lineHeight: 32px
+  headline-md:
+    fontFamily: Nunito Sans
+    fontSize: 20px
+    fontWeight: '700'
+    lineHeight: 28px
+  title-md:
+    fontFamily: Quicksand
+    fontSize: 18px
+    fontWeight: '700'
+    lineHeight: 24px
+  body-lg:
+    fontFamily: Quicksand
+    fontSize: 16px
+    fontWeight: '600'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Quicksand
+    fontSize: 14px
+    fontWeight: '500'
+    lineHeight: 20px
+  label-lg:
+    fontFamily: Nunito Sans
+    fontSize: 14px
+    fontWeight: '700'
+    lineHeight: 18px
+    letterSpacing: 0.2px
+  label-md:
+    fontFamily: Nunito Sans
+    fontSize: 12px
+    fontWeight: '700'
+    lineHeight: 16px
+    letterSpacing: 0.3px
+  math-display:
+    fontFamily: Nunito Sans
+    fontSize: 22px
+    fontWeight: '700'
+    lineHeight: 30px
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-sm: 0.75rem
+  margin: 1rem
+  margin-tablet: 2rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+
+This design system targets 5th-grade primary students (ages 10–11) mastering foundational math concepts—fractions, decimals, geometry, and measurement—alongside parents monitoring progress. The emotional tone must balance academic clarity with play-driven encouragement: focused, rewarding, frictionless, and cheerful without feeling infantile.
+
+The design movement synthesizes modern soft-tactile UI and crisp educational minimalism:
+- **Clean canvas, energetic accents**: Clean white and soft cloud backgrounds keep formulas and geometric figures legible, while vibrant gamified accents highlight achievements.
+- **Friendly tactile affordances**: Layered buttons with bottom-edge borders evoke physical push-down clicks, rewarding completion of drills.
+- **Visual learning first**: Abstract math operations are paired with high-contrast diagrams, color-coded fraction bars, and vibrant progress rings.
+
+## Colors
+
+- **Primary (`#2563EB`)**: Anchor color for primary actions, header navigation, active exercise states, and structural focus. Supported by a vivid sky tint (`#3B82F6` and `#DBEAFE`) for interactive surfaces and selected states.
+- **Secondary (`#F59E0B`)**: Gamification and motivational catalyst. Reserved strictly for streaks, star ratings, XP points, coin tallies, and unlock states. Paired with soft amber tints (`#FEF3C7`) for achievement badges.
+- **Tertiary (`#10B981`)**: Feedback and mastery color. Used for correct answers, 100% completion ribbons, and constructive verification tags.
+- **Neutral (`#475569`)**: Balanced slate scale for optimal legibility. Neutral dark (`#0F172A`) drives primary question copy and math formulas; muted slate (`#64748B`) drives auxiliary subtext and unit indicators. Background sits on crisp porcelain (`#F8FAFC`) with pure white (`#FFFFFF`) cards.
+- **Semantic Error (`#EF4444`)**: Used sparingly for incorrect choices, accompanied by explanatory tooltips rather than punitive visuals.
+
+## Typography
+
+The type scale combines **Nunito Sans** for prominent figures, headers, and UI anchors with **Quicksand** for instructional body content and math explanations. 
+
+- **Readability & Numerals**: Ensure all numbers render with proportional lining numerals to maintain alignment across fraction bars, vertical long division, and measurement decimals.
+- **Math Formulations (`math-display`)**: Applied to equations, fractions (numerator/denominator blocks), and unit conversions. Never set mathematical variables below 16px to prevent confusion between decimal points and multiplication signs.
+- **Hierarchical Tone**: Headings convey friendliness via rounded terminals, while high weights (700 and 800) prevent visual weakness on smaller handheld displays.
+
+## Layout & Spacing
+
+A mobile-first 4-column layout fluidly adapts to a 6-column grid on small tablets and an 8-column centralized container for standard tablets.
+
+- **Canvas Gutters & Margins**: Default mobile screens maintain a strict `1rem` (16px) margin from canvas boundaries. Tablet screens scale outer margins to `2rem` (32px) to prevent overstretched question cards.
+- **Touch-First Rhythm**: All tap targets (answer tiles, drag handles, numpad keys) must have a minimum bounding box of 48×48px with a minimum gap of `space-sm` (8px).
+- **Vertical Scannability**: Exercise prompts use `space-md` separation between question stems, formulas, and multiple-choice grids to minimize cognitive overload.
+
+## Elevation & Depth
+
+Visual hierarchy uses physical-tactile layering, crisp offset borders, and saturated ambient drop shadows rather than heavy generic blurs:
+
+- **Level 0 (Flat Ground)**: Screen canvases set to `#F8FAFC`.
+- **Level 1 (Card & Module Layer)**: Pure white cards (`#FFFFFF`) with a 2px solid border in `#E2E8F0` and an extra-soft ambient shadow (`0 4px 12px -2px rgba(37, 99, 235, 0.06)`).
+- **Level 2 (Interactive Floating Elements)**: Gamified buttons and answer options use a 3D isometric base: a primary background matched with a 4px solid bottom inset line (e.g., `#1D4ED8` beneath `#2563EB`) that depresses by 2px on active press.
+- **Level 3 (Modals & Victory Sheets)**: Gamification summaries and reward popups use an elevated shadow (`0 12px 32px -4px rgba(15, 23, 42, 0.15)`) coupled with a gentle warm glow around gold badges.
+
+## Shapes
+
+The interface embraces pillowy, generous curvature to establish warmth and safety:
+- **Standard Cards & Lesson Modules**: Utilize `rounded-xl` (1.5rem / 24px) for clear separation and friendly borders.
+- **Answer Selection Tiles & Input Fields**: Standardize on `rounded-lg` (1rem / 16px) for finger-friendly comfort.
+- **Action Buttons, Badges, & Chips**: Use full pill radii (`9999px`) to invite clicks and distinguish tags from informational cards.
+- **Math Fraction Blocks**: Numerators and denominators sit within uniform rounded micro-cells (8px) separated by a clean horizontal bar.
+
+## Components
+
+### 1. Buttons
+- **Primary CTA**: Pill-shaped or rounded-2xl with `#2563EB` fill, white bold text, and a distinct `#1D4ED8` 4px tactile base shadow. On press, the button translates down 2px, reducing the shadow.
+- **Secondary (Gamified Action)**: Golden Amber (`#F59E0B`) fill with `#B45309` tactile edge for daily challenges, bonus rounds, and double XP prompts.
+- **Ghost/Tertiary**: Translucent sky wash (`#EFF6FF`) with blue text and a 1.5px `#BFDBFE` outline for back buttons and hint triggers.
+
+### 2. Math Question Cards & Option Tiles
+- **Multi-Choice Tiles**: Generous padding (`space-md`), white surface with 2px `#E2E8F0` border.
+- **Selected State**: Light blue background (`#EFF6FF`), vibrant border (`#2563EB`), with a check icon badge.
+- **Correct/Incorrect States**: Transform instantly into `#ECFDF5` with `#10B981` border (correct) or `#FEF2F2` with `#EF4444` border (incorrect), accompanied by an inline step-by-step hint.
+
+### 3. Dynamic Progress Bars & Indicators
+- **Lesson Progress**: Track height of 12px, background `#E2E8F0`, with a rounded fill of vibrant `#2563EB` containing a subtle animated striped sheen.
+- **XP/Streak Bar**: Golden gradient fill (`#F59E0B` to `#FBBF24`) paired with an animated flame icon pill showing the day count.
+
+### 4. Chips & Category Tags
+- Pill-shaped tags (`label-md`) indicating math domains:
+  - *Fractions*: Indigo tint (`#EEF2FF` text `#4338CA`)
+  - *Decimals*: Cyan tint (`#ECFEFF` text `#0E7490`)
+  - *Geometry*: Amber tint (`#FFFBEB` text `#B45309`)
+  - *Measurement*: Emerald tint (`#ECFDF5` text `#047857`)
+
+### 5. Input Fields & Numeric Pads
+- **Math Inputs**: Clean white boxes with 2px borders, large centered numerals (`math-display`), accompanied by a built-in virtual math numpad featuring large circular keys (`48×48px` minimum) to simplify fraction and decimal entries without triggering full device keyboards.
+
+### 6. Badges & Achievement Cards
+- Circular or shield-shaped frames with dual-layered rings, glowing star accents, and bold contrast titles to celebrate milestones (e.g., "Bậc Thầy Phân Số", "Thợ Săn Điểm 10").

@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Nunito Sans', system-ui, -apple-system, sans-serif;
+    --font-body: 'Quicksand', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #F8FAFC;
+    color: #0F172A;
+    font-variant-numeric: lining-nums tabular-nums;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.font-display {
+  font-family: 'Nunito Sans', system-ui, -apple-system, sans-serif;
+}
+
+.font-body {
+  font-family: 'Quicksand', system-ui, -apple-system, sans-serif;
+}
+
+.tabular-nums {
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+/* Tactile 3D Button & Card Shadows from Math Spark Junior Design System */
+.card-surface {
+  background-color: #FFFFFF;
+  border: 2px solid #E2E8F0;
+  box-shadow: 0 4px 12px -2px rgba(37, 99, 235, 0.06);
+}
+
+.btn-tactile-primary {
+  background-color: #2563EB;
+  color: #FFFFFF;
+  box-shadow: 0 4px 0 #1D4ED8;
+  transition: transform 120ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 120ms cubic-bezier(0.16, 1, 0.3, 1), background-color 150ms ease;
+}
+
+.btn-tactile-primary:hover:not(:disabled) {
+  background-color: #1D4ED8;
+}
+
+.btn-tactile-primary:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #1D4ED8;
+}
+
+.btn-tactile-secondary {
+  background-color: #F59E0B;
+  color: #FFFFFF;
+  box-shadow: 0 4px 0 #B45309;
+  transition: transform 120ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 120ms cubic-bezier(0.16, 1, 0.3, 1), background-color 150ms ease;
+}
+
+.btn-tactile-secondary:hover:not(:disabled) {
+  background-color: #D97706;
+}
+
+.btn-tactile-secondary:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #B45309;
+}
+
+.btn-tactile-emerald {
+  background-color: #10B981;
+  color: #FFFFFF;
+  box-shadow: 0 4px 0 #047857;
+  transition: transform 120ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 120ms cubic-bezier(0.16, 1, 0.3, 1), background-color 150ms ease;
+}
+
+.btn-tactile-emerald:hover:not(:disabled) {
+  background-color: #059669;
+}
+
+.btn-tactile-emerald:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #047857;
+}
+
+.btn-ghost-sky {
+  background-color: #EFF6FF;
+  color: #1D4ED8;
+  border: 1.5px solid #BFDBFE;
+  transition: background-color 150ms ease, border-color 150ms ease, transform 120ms ease;
+}
+
+.btn-ghost-sky:hover:not(:disabled) {
+  background-color: #DBEAFE;
+  border-color: #93C5FD;
+}
+
+.btn-ghost-sky:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+/* Lesson progress striped sheen */
+@keyframes progress-sheen {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 32px 0;
+  }
+}
+
+.progress-striped {
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 32px 32px;
+  animation: progress-sheen 1.4s linear infinite;
+}
+
+/* Gold badge warm glow */
+.badge-glow-gold {
+  box-shadow: 0 8px 24px -4px rgba(245, 158, 11, 0.28), 0 0 0 4px rgba(254, 243, 199, 0.8);
+}
+
+.victory-shadow {
+  box-shadow: 0 12px 32px -4px rgba(15, 23, 42, 0.15);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-striped {
+    animation: none;
+  }
+}
